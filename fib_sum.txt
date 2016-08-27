@@ -1,0 +1,22 @@
+4) Return the sum of the elements of the Fibonacci Series upto nth terms.
+*/
+package sample;
+import javax.swing.*;
+public class demo
+{
+public static void main(String args[])
+{
+	int sum=0,f1=0,f2=1,f3;
+	String no=JOptionPane.showInputDialog("Enter a no:");
+	int n=Integer.parseInt(no);
+	for(int i=1;i<n;i++)
+	{
+		f3=f1+f2;
+		sum=sum+f3;
+		f1=f2;
+		f2=f3;
+	}
+	System.out.println("Sum is "+sum);
+}
+
+}
